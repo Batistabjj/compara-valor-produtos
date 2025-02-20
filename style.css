@@ -1,0 +1,98 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Estilos para o container de resultados */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexível para vários tamanhos de tela */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para cada item de produto */
+.produto {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajustes no contêiner da imagem */
+.produto .img-container {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-height: 200px; /* Define uma altura máxima para o contêiner da imagem */
+    overflow: hidden; /* Garante que o excesso da imagem seja cortado */
+    position: relative;
+    border-radius: 8px; /* Borda arredondada para o contêiner */
+    display: flex; /* Flexbox para alinhar a imagem */
+    justify-content: center; /* Alinha a imagem ao centro */
+    align-items: center; /* Alinha a imagem ao centro */
+}
+
+/* Estilos para as imagens dentro do contêiner */
+.produto img {
+    max-width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    max-height: 100%; /* A imagem ocupa no máximo a altura do contêiner */
+    object-fit: contain; /* Ajusta a imagem para caber sem distorcer */
+    display: block; /* Garante que a imagem seja exibida como bloco e remova qualquer espaçamento extra */
+}
+
+/* Estilos para os textos do produto */
+.produto h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.produto p {
+    font-size: 1em;
+    color: #333;
+}
