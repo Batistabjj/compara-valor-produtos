@@ -66,24 +66,20 @@ button:hover {
 }
 
 /* Ajustes no contêiner da imagem */
-.produto .img-container {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-height: 200px; /* Define uma altura máxima para o contêiner da imagem */
-    overflow: hidden; /* Garante que o excesso da imagem seja cortado */
-    position: relative;
-    border-radius: 8px; /* Borda arredondada para o contêiner */
-    display: flex; /* Flexbox para alinhar a imagem */
-    justify-content: center; /* Alinha a imagem ao centro */
-    align-items: center; /* Alinha a imagem ao centro */
-}
-
-/* Estilos para as imagens dentro do contêiner */
 .produto img {
     max-width: 100%; /* A imagem ocupa 100% da largura do contêiner */
     max-height: 100%; /* A imagem ocupa no máximo a altura do contêiner */
     object-fit: contain; /* Ajusta a imagem para caber sem distorcer */
     display: block; /* Garante que a imagem seja exibida como bloco e remova qualquer espaçamento extra */
+    transition: transform 0.3s ease; /* Suaviza a transição do efeito */
+    cursor: pointer; /* Indica que a imagem é interativa */
 }
+
+.produto img:hover {
+    transform: scale(1.5); /* Aumenta a imagem em 50% ao passar o mouse */
+}
+
+
 
 /* Estilos para os textos do produto */
 .produto h3 {
