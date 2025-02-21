@@ -23,7 +23,7 @@ function exibirProdutos(produtos) {
     // Limpa os resultados anteriores de produtos, caso haja
     container.innerHTML = "";
 
-    // Itera pelos produtos recebidos e exibe no máximo 5 produtos
+    // Itera pelos produtos recebidos e exibe no máximo 50 produtos
     produtos.slice(0, 50).forEach(produto => { 
         // Cria um novo elemento "div" para cada produto
         const item = document.createElement("div");
